@@ -1,4 +1,5 @@
 # app
+node version used : 18.13.0
 
 ## Project setup
 ```
