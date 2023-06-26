@@ -3,7 +3,7 @@ import { reactive } from "vue"
 import gql from 'graphql-tag'
 import { useQuery } from '@vue/apollo-composable'
 
-import CountryInfosDisplayerVue from "./components/CountryInfosDisplayer.vue"
+import CountryInfosDisplayer from "./components/CountryInfosDisplayer.vue"
 
 // QUERY LOGIC
 const COUNTRY_QUERY = gql`
@@ -63,7 +63,7 @@ function handleCountrySelection( event ){
 
   </div>
 
-  <CountryInfosDisplayerVue v-if="currentCountryInfos.code"
+  <CountryInfosDisplayer v-if="currentCountryInfos.code"
     :countryInfos="currentCountryInfos"
   />
 
